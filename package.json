@@ -1,0 +1,44 @@
+{
+  "name": "uni-vite-weapp-monorepe",
+  "version": "0.0.1",
+  "description": "uni-vite-weapp monorepo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "weapp1:dev": "pnpm --filter weapp1 dev:mp-weixin",
+    "weapp1:build": "pnpm --filter weapp1 build:mp-weixin",
+    "release": "nr bump",
+    "bump": "changeset && changeset version"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@antfu/ni": "^0.21.12",
+    "@hugh-ma/utils": "^0.0.8",
+    "@hugh-ma/vueuse": "^0.0.8",
+    "axios": "0.27.2",
+    "pinia": "2.0.33",
+    "vue": "^3.2.45",
+    "vue-i18n": "^9.1.9"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.3.3",
+    "@changesets/cli": "^2.27.1",
+    "@dcloudio/types": "^3.3.2",
+    "@dcloudio/uni-automator": "3.0.0-3090820231124001",
+    "@dcloudio/uni-cli-shared": "3.0.0-3090820231124001",
+    "@dcloudio/uni-stacktracey": "3.0.0-3090820231124001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-3090820231124001",
+    "@types/node": "^20.10.3",
+    "@vue/runtime-core": "^3.2.45",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.55.0",
+    "miniprogram-api-typings": "^3.12.1",
+    "sass": "^1.69.5",
+    "typescript": "^4.9.4",
+    "unocss": "^0.57.2",
+    "unocss-preset-weapp": "^0.57.0",
+    "unplugin-auto-import": "^0.16.7",
+    "vite": "4.1.4",
+    "vue-tsc": "^1.0.24"
+  }
+}
